@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+
+    <form action="~/Home/Show" method="post">
+        <p>Choose your c# level:</p>
+
+        @foreach (string item in Model)
+        {
+            <div>
+                <input type="checkbox" id="good" value="good" name="@item">@item
+            </div>
+        }
+        <button>submit</button>
+
+    </form>
